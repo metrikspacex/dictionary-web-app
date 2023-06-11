@@ -1,0 +1,8 @@
+header.root {
+  background-color: var(--header-bg);
+  display: flex;
+  flex-direction: column;
+  grid-area: header;
+  padding: 2.4rem;
+  row-gap: 2.4rem;
+}

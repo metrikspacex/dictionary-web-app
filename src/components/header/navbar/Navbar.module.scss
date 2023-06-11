@@ -1,0 +1,12 @@
+nav.root {
+  background-color: var(--navbar-bg);
+  display: flex;
+  height: 3.2rem;
+  justify-content: space-between;
+}
+
+div.container {
+  align-items: center;
+  column-gap: 1.6rem;
+  display: flex;
+}

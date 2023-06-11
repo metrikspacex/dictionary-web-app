@@ -1,0 +1,31 @@
+div.root {
+  align-items: center;
+  display: flex;
+  height: 3.2rem;
+  position: relative;
+}
+
+button.font__selector {
+  background-color: transparent;
+  border: 0;
+  color: var(--font-switcher-tc);
+  font-family: var(--ff);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  margin-right: 1.6rem;
+  outline: 0;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+img.font__selector {
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+}

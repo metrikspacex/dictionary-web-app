@@ -1,0 +1,28 @@
+ul.root {
+  background-color: var(--font-switcher-modal-bg);
+  border-radius: 1.6rem;
+  bottom: 0;
+  box-shadow: 0 0.5rem 2rem var(--font-switcher-modal-bs);
+  height: 15.2rem;
+  list-style: none;
+  padding: 2.4rem;
+  position: absolute;
+  right: 0;
+  transform: translate(0, calc(100% + 1rem));
+  width: 18.3rem;
+}
+
+li.font__selection {
+  color: var(--font-switcher-modal-tc);
+  font-family: var(--ff);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  margin-bottom: 1.6rem;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,147 @@
+@use "breaks" as *;
+
+* {
+  font: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  // Colors
+  // Accent
+  --accent-100: #FF5252;
+  --accent-200: #A445ED;
+  --accent-300: #8F19E8;
+  // Neutral
+  --neutral-100: #FFFFFF;
+  --neutral-200: #F4F4F4;
+  --neutral-300: #E9E9E9;
+  --neutral-400: #CECECE;
+  --neutral-500: #757575;
+  --neutral-600: #3A3A3A;
+  --neutral-700: #2D2D2D;
+  --neutral-800: #1F1F1F;
+  --neutral-900: #050505;
+  --neutral-950: #000000;
+
+  // Default Tokens
+  // Settings
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  font-size: 10px;
+  font-weight: 400;
+  font-synthesis: none;
+  line-height: 1.5;
+}
+
+// Key
+// bg -> background
+// bs -> box shadow
+// ff -> font family
+// tc -> text color
+
+html[data-theme="dark"] {
+  // Global
+  --bg: var(--neutral-900);
+  --ff: var(--ff-mono);
+  --tc: var(--neutral-100);
+
+  // Font switcher
+  --font-switcher-tc: var(--neutral-100);
+
+  // Font switcher modal
+  --font-switcher-modal-bg: var(--neutral-800);
+  --font-switcher-modal-bs: var(--accent-200);
+  --font-switcher-modal-tc: var(--neutral-100);
+
+  // Header
+  --header-bg: var(--neutral-900);
+
+  // Main
+  --main-bg: var(--neutral-900);
+
+  // Navbar
+  --navbar-bg: var(--neutral-900);
+
+  // Searchbar
+  --searchbar-bg: var(--neutral-800);
+  --searchbar-tc: var(--neutral-100);
+
+  // Theme switcher
+  --theme-switcher-icon-moon-stroke: var(--accent-200);
+  --theme-switcher-slider-bg: var(--accent-200);
+  --theme-switcher-toggle-button-bg: var(--neutral-100);
+}
+
+html[data-theme="light"] {
+  // Global
+  --bg: var(--neutral-100);
+  --ff: var(--ff-mono);
+  --tc: var(--neutral-700);
+
+  // Font switcher
+  --font-switcher-tc: var(--neutral-700);
+
+  // Font switcher modal
+  --font-switcher-modal-bg: var(--neutral-100);
+  --font-switcher-modal-bs: rgba(0, 0, 0, 0.1);
+  --font-switcher-modal-tc: var(--neutral-700);
+
+  // Header
+  --header-bg: var(--neutral-100);
+
+  // Main
+  --main-bg: var(--neutral-100);
+
+  // Navbar
+  --navbar-bg: var(--neutral-100);
+
+  // Searchbar
+  --searchbar-bg: var(--neutral-200);
+  --searchbar-tc: var(--neutral-700);
+
+  // Theme switcher
+  --theme-switcher-icon-moon-stroke: var(--neutral-500);
+  --theme-switcher-slider-bg: var(--neutral-500);
+  --theme-switcher-toggle-button-bg: var(--neutral-100);
+}
+
+body {
+  @include breaks(mobile) {
+    background-color: var(--bg);
+    color: var(--tc);
+    display: grid;
+    font-family: var(--ff);
+    grid-template-areas:
+      "header"
+      "main";
+    grid-template-columns: clamp(32rem, 100%, 73.6rem);
+    grid-template-rows: 15.2rem 1fr;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  @include breaks(tablet) {
+  }
+
+  @include breaks(desktop) {
+  }
+}
+
+.horizontal-divider {
+  background-color: var(--neutral-500);
+  height: 100%;
+  width: 1px;
+}
+
+.vertical-divider {
+}
+

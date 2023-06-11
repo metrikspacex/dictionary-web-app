@@ -1,0 +1,24 @@
+form.root {
+  background-color: var(--searchbar-bg);
+  border-radius: 1.6rem;
+  height: 4.8rem;
+}
+
+input.search {
+  background-color: inherit;
+  border-radius: 1.6rem;
+  border: 0;
+  color: var(--searchbar-tc);
+  font-family: var(--ff);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  height: 100%;
+  line-height: 2.4rem;
+  outline: 0;
+  padding-inline: 2.4rem;
+
+  &::placeholder {
+    color: var(--searchbar-tc);
+  }
+}

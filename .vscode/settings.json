@@ -1,0 +1,152 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    ".eslintignore": true,
+    ".gitignore": true,
+    ".idea": true,
+    ".next": true,
+    ".prettierignore": true,
+    ".prettierrc": true,
+    "app/favicon.ico": true,
+    "next-env.d.ts": true,
+    "next.config.js": true,
+    "node_modules": true,
+    "package-lock.json": true,
+    "package.json": true,
+    "postcss.config.js": true,
+    "tailwind.config.js": true,
+    "tsconfig.json": true
+  },
+  "stylelint.config": {
+    "overrides": [
+      {
+        "customSyntax": "postcss-scss",
+        "defaultSeverity": "error",
+        "extends": [
+          "stylelint-config-standard-scss",
+          "stylelint-scss"
+        ],
+        "files": [
+          "*.css",
+          "**/*.css",
+          "*.scss",
+          "**/*.scss"
+        ],
+        "reportDescriptionlessDisables": false,
+        "reportInvalidScopeDisables": true,
+        "reportNeedlessDisables": true,
+        "rules": {
+          "at-rule-empty-line-before": [
+            "always",
+            {
+              "except": [
+                "inside-block",
+                "blockless-after-same-name-blockless",
+                "blockless-after-blockless",
+                "first-nested"
+              ],
+              "ignore": [
+                "after-comment",
+                "inside-block",
+                "blockless-after-same-name-blockless",
+                "blockless-after-blockless"
+              ]
+            }
+          ],
+          "at-rule-name-newline-after": "always-multi-line",
+          "at-rule-no-unknown": null,
+          "at-rule-no-vendor-prefix": true,
+          "at-rule-semicolon-space-before": "never",
+          "block-no-empty": null,
+          "color-named": null,
+          "color-no-hex": null,
+          "declaration-block-no-redundant-longhand-properties": null,
+          "declaration-block-trailing-semicolon": null,
+          "declaration-no-important": true,
+          "font-family-name-quotes": "always-where-required",
+          "font-family-no-missing-generic-family-keyword": null,
+          "font-weight-notation": null,
+          "function-parentheses-newline-inside": null,
+          "function-parentheses-space-inside": null,
+          "function-url-no-scheme-relative": true,
+          "function-url-quotes": "always",
+          "max-line-length": [
+            140,
+            {
+              "ignore": "non-comments"
+            }
+          ],
+          "max-nesting-depth": [
+            4,
+            {
+              "ignore": [
+                "blockless-at-rules"
+              ]
+            }
+          ],
+          "media-feature-name-no-vendor-prefix": true,
+          "no-descending-specificity": null,
+          "no-duplicate-selectors": true,
+          "no-empty-source": null,
+          "no-unknown-animations": true,
+          "number-max-precision": 3,
+          "property-no-unknown": [
+            true,
+            {
+              "ignoreProperties": [
+                "/^lost-/"
+              ]
+            }
+          ],
+          "property-no-vendor-prefix": true,
+          "rule-empty-line-before": [
+            "always",
+            {
+              "except": [
+                "after-single-line-comment",
+                "inside-block-and-after-rule",
+                "first-nested"
+              ],
+              "ignore": [
+                "after-comment",
+                "inside-block"
+              ]
+            }
+          ],
+          "scss/at-rule-no-unknown": null,
+          "selector-attribute-quotes": "always",
+          "selector-max-class": 4,
+          "selector-max-combinators": 4,
+          "selector-max-compound-selectors": 4,
+          "selector-max-specificity": null,
+          "selector-max-type": [
+            4,
+            {
+              "ignore": [
+                "child",
+                "compounded",
+                "descendant"
+              ]
+            }
+          ],
+          "selector-max-universal": 4,
+          "selector-no-qualifying-type": null,
+          "selector-no-vendor-prefix": true,
+          "selector-type-no-unknown": null,
+          "string-quotes": "double",
+          "time-min-milliseconds": 100,
+          "unit-disallowed-list": [ ],
+          "value-keyword-case": "lower",
+          "value-no-vendor-prefix": true
+        }
+      }
+    ]
+  },
+  "stylelint.configFile": ".stylelintrc.json",
+  "stylelint.customSyntax": "postcss-scss",
+  "stylelint.enable": true,
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ]
+}
