@@ -4,7 +4,6 @@ import clsx from "clsx";
 import { Inconsolata, Inter, Lora } from "next/font/google";
 
 import Header from "@/components/header/Header";
-import Main from "@/components/main/Main";
 
 const inconsolata = Inconsolata({
   style: ["normal"],
@@ -39,7 +38,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       lang="en">
       <body>
         <Header className={clsx()} />
-        <Main className={clsx()}>{children}</Main>
+        {children}
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 div.root {
+  background-color: var(--antonym-bg);
   column-gap: 1.6rem;
   display: grid;
   grid-auto-flow: row;
@@ -6,8 +7,8 @@ div.root {
   margin-bottom: 1.3rem;
 }
 
-h1.antonyms {
-  color: #757575;
+h1.antonym {
+  color: var(--antonym-tc-1);
   font-family: var(--ff);
   font-size: 1.6rem;
   font-style: normal;
@@ -21,9 +22,9 @@ div.container {
   flex-direction: row;
   flex-wrap: wrap;
 
-  p.antonyms {
+  p.antonym {
     display: inline-block;
-    color: #A445ED;
+    color: var(--antonym-tc-2);
     font-family: var(--ff);
     font-size: 1.6rem;
     font-style: normal;

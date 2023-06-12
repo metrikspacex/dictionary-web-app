@@ -5,8 +5,8 @@ div.root {
   grid-template-columns: max-content 1fr;
 }
 
-h1.synonyms {
-  color: #757575;
+h1.synonym {
+  color: var(--synonym-tc-1);
   font-family: var(--ff);
   font-size: 1.6rem;
   font-style: normal;
@@ -21,8 +21,8 @@ div.container {
   flex-wrap: wrap;
   gap: 0.2rem;
 
-  p.synonyms {
-    color: #A445ED;
+  p.synonym {
+    color: var(--synonym-tc-2);
     display: inline-block;
     font-family: var(--ff);
     font-size: 1.6rem;

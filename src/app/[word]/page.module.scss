@@ -1,13 +1,5 @@
-div.root {
-  display: flex;
-  flex-direction: column;
-  row-gap: 3.2rem;
-  height: 100%;
-}
-
-span.divider {
-  background-color: var(--neutral-600);
-  display: block;
-  height: 1px;
-  width: 100%;
+main.root {
+  background-color: var(--main-bg);
+  padding: 2.4rem;
+  grid-area: main;
 }

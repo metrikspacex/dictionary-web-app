@@ -1,4 +1,5 @@
 div.root {
+  background-color: var(--dictionary-bg);
   display: flex;
   flex-direction: column;
   row-gap: 3.2rem;
@@ -6,8 +7,8 @@ div.root {
 }
 
 span.divider {
-  background-color: var(--neutral-600);
+  background-color: var(--divider-color);
   display: block;
-  height: 1px;
+  height: 0.1rem;
   width: 100%;
 }

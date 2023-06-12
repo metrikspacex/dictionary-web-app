@@ -22,12 +22,12 @@ export default function Antonym({ antonyms, className }: AntonymProps) {
 
   return (
     <div className={clsx(styles.root, className)}>
-      <h1 className={clsx(styles.antonyms)}>Antonyms</h1>
+      <h1 className={clsx(styles.antonym)}>Antonyms</h1>
       <div className={clsx(styles.container)}>
         {antonyms.map((item, key) => {
           return (
             <p
-              className={clsx(styles.antonyms)}
+              className={clsx(styles.antonym)}
               key={`antonyms-${key}`}
               onClick={onClick}>
               {item};&nbsp;

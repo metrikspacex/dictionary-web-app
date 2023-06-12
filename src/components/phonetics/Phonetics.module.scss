@@ -1,0 +1,12 @@
+section.root {
+  align-items: center;
+  background-color: var(--phonetics-bg);
+  display: grid;
+  grid-template-areas:
+          "word play"
+          "phonetic play";
+  grid-template-columns: max-content 4.8rem;
+  grid-template-rows: max-content 4.8rem;
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+}

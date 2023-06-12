@@ -1,10 +1,14 @@
+section.root {
+  background-color: var(--meaning-bg);
+}
+
 div.partOfSpeech {
   align-items: center;
   margin-bottom: 3.2rem;
   display: flex;
 
   & > span:nth-child(1) {
-    color: var(--neutral-100);
+    color: var(--meaning-part-of-speech-tc);
     font-family: var(--ff);
     font-size: 1.8rem;
     font-style: italic;
@@ -15,14 +19,15 @@ div.partOfSpeech {
   }
 
   & > span:nth-child(2) {
-    background-color: var(--neutral-600);
+    background-color: var(--divider-color);
+    color: var(--divider-color);
     height: 1px;
     width: 100%;
   }
 }
 
-h1.meaning {
-  color: var(--neutral-500);
+h1.heading {
+  color: var(--meaning-heading-tc);
   font-family: var(--ff);
   font-size: 16px;
   font-style: normal;
@@ -34,7 +39,11 @@ h1.meaning {
 ul.definitions {
   display: flex;
   flex-direction: column;
-  row-gap: 1.3rem;
   list-style-position: inside;
   margin-bottom: 2.4rem;
+  row-gap: 1.3rem;
+
+  & > li::marker {
+    color: var(--accent-200);
+  }
 }

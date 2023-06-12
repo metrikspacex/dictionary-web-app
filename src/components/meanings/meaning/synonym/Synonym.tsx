@@ -22,12 +22,12 @@ export default function Synonym({ className, synonyms }: SynonymProps) {
 
   return (
     <div className={clsx(styles.root, className)}>
-      <h1 className={clsx(styles.synonyms)}>Synonyms</h1>
+      <h1 className={clsx(styles.synonym)}>Synonyms</h1>
       <div className={clsx(styles.container)}>
         {synonyms.map((item, key) => {
           return (
             <p
-              className={clsx(styles.synonyms)}
+              className={clsx(styles.synonym)}
               key={`synonyms-${key}`}
               onClick={onClick}>
               {item};&nbsp;

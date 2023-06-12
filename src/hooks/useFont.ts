@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 
 export type SupportFonts = "mono" | "sans-serif" | "serif";
+
 export default function useFont(): [
   SupportFonts,
   (_font: SupportFonts) => void
+  // eslint-disable-next-line
 ] {
   const [font, setFont] = useState<SupportFonts>("mono");
 
@@ -18,7 +20,7 @@ export default function useFont(): [
     } else {
       window.document.documentElement.style.setProperty(
         "--ff",
-        `var(--ff-mono)`
+        "var(--ff-mono)"
       );
       window.localStorage.setItem("font", "mono");
     }

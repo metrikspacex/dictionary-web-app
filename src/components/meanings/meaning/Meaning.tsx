@@ -18,7 +18,7 @@ export default function Meaning({ className, meaning }: MeaningProps) {
         <span>{meaning.partOfSpeech}</span>
         <span></span>
       </div>
-      <h1 className={clsx(styles.meaning)}>Meaning</h1>
+      <h1 className={clsx(styles.heading)}>Meaning</h1>
       <ul className={clsx(styles.definitions, className)}>
         {meaning.definitions.map((item) => {
           return (

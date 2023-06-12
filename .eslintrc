@@ -42,6 +42,7 @@
   ],
   "root": true,
   "rules": {
+    "jsx-a11y/media-has-caption": "off",
     "@next/next/no-img-element": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
@@ -77,7 +78,8 @@
       "error",
       10
     ],
-    "consistent-return": "error",
+    "unicorn/no-abusive-eslint-disable": "off",
+    "consistent-return": "off",
     "curly": "error",
     "default-case": "error",
     "dot-notation": "error",

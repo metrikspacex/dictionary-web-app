@@ -1,25 +1,41 @@
+div.root {
+  background-color: var(--source-bg);
+}
+
 h1.source {
-  color: var(--neutral-500);
+  color: var(--source-tc);
   font-family: var(--ff);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  grid-column: 1 / -1;
+  grid-row: 1;
   line-height: 18px;
   margin-bottom: 0.7rem;
   text-decoration-line: underline;
 }
 
+div.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
 a.source {
-  color: var(--neutral-100);
+  color: var(--source-link-tc);
   font-family: var(--ff);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  grid-column: 1;
+  grid-row: 2;
   line-height: 18px;
-  text-decoration-line: underline;
   margin-right: 1.5rem;
+  text-decoration-line: underline;
 }
 
 img.source {
+  grid-column: 2;
+  grid-row: 2;
   vertical-align: middle;
 }

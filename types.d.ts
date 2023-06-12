@@ -11,6 +11,21 @@ type Definition = {
   synonyms: string[];
 };
 
+type Dictionary = {
+  license: License;
+  meanings: Meaning[];
+  phonetic: Phonetic;
+  phonetics: Phonetics[];
+  sourceUrls: SourceUrls;
+  word: Word;
+}[];
+
+type Error = {
+  message: string;
+  resolution: string;
+  title: string;
+};
+
 type License = {
   name: string;
   url: string;
@@ -30,23 +45,8 @@ type Phonetics = {
   license?: License;
   sourceUrl?: string;
   text: string;
-}[];
+};
 
 type SourceUrls = string[];
 
 type Word = string;
-
-type ErrorResponse = {
-  message: string;
-  resolution: string;
-  title: string;
-};
-
-type WordResponse = {
-  license: License;
-  meanings: Meaning[];
-  phonetic: Phonetic;
-  phonetics: Phonetics;
-  sourceUrls: SourceUrls;
-  word: Word;
-}[];

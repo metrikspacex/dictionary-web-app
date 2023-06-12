@@ -13,19 +13,24 @@ export default function SourceLink({ className, sourceUrls }: SourceLinkProps) {
       <h1 className={clsx(styles.source)}>Source</h1>
       {sourceUrls.map((item, key) => {
         return (
-          <>
-            <a className={clsx(styles.source)} href={item} key={key}>
+          <div className={clsx(styles.container)}>
+            <a
+              className={clsx(styles.source)}
+              href={item}
+              key={`link-${key}`}
+              rel="noreferrer"
+              target="_blank">
               {item}
             </a>
             <Image
               alt="Go to source link"
               className={clsx(styles.source)}
               height={12}
-              key={key}
+              key={`play-${key}`}
               src="/images/icon-new-window.svg"
               width={12}
             />
-          </>
+          </div>
         );
       })}
     </div>

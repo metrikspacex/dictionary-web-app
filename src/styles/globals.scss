@@ -54,7 +54,28 @@ html[data-theme="dark"] {
   --ff: var(--ff-mono);
   --tc: var(--neutral-100);
 
+  // Antonym
+  --antonym-bg: var(--neutral-900);
+  --antonym-tc-1: var(--neutral-500);
+  --antonym-tc-2: var(--accent-200);
+
+  // Definition
+  --definition-bg: var(--neutral-900);
+  --definition-marker: var(--accent-200);
+  --definition-tc: var(--neutral-100);
+
+  // Dictionary
+  --dictionary-bg: var(--neutral-900);
+
+  // Divider
+  --divider-color: var(--neutral-600);
+
+  // Example
+  --example-bg: var(--neutral-900);
+  --example-tc: var(--neutral-500);
+
   // Font switcher
+  --font-switcher-bg: var(--neutral-900);
   --font-switcher-tc: var(--neutral-100);
 
   // Font switcher modal
@@ -67,6 +88,11 @@ html[data-theme="dark"] {
 
   // Main
   --main-bg: var(--neutral-900);
+
+  // Meaning
+  --meaning-bg: var(--neutral-900);
+  --meaning-part-of-speech-tc: var(--neutral-100);
+  --meaning-heading-tc: var(--neutral-500);
 
   // Message
   --message-bg: var(--neutral-900);
@@ -82,9 +108,22 @@ html[data-theme="dark"] {
   --phonetic-tc: var(--accent-200);
   --phonetic-word-tc: var(--neutral-100);
 
+  // Phonetics
+  --phonetics-bg: var(--neutral-900);
+
   // Searchbar
   --searchbar-bg: var(--neutral-800);
   --searchbar-tc: var(--neutral-100);
+
+  // Source
+  --source-bg: var(--neutral-900);
+  --source-tc: var(--neutral-500);
+  --source-link-tc: var(--neutral-100);
+
+  // Synonym
+  --synonym-bg: var(--neutral-900);
+  --synonym-tc-1: var(--neutral-500);
+  --synonym-tc-2: var(--accent-200);
 
   // Theme switcher
   --theme-switcher-icon-moon-stroke: var(--accent-200);
@@ -98,7 +137,28 @@ html[data-theme="light"] {
   --ff: var(--ff-mono);
   --tc: var(--neutral-700);
 
+  // Antonym
+  --antonym-bg: var(--neutral-100);
+  --antonym-tc-1: var(--neutral-500);
+  --antonym-tc-2: var(--accent-200);
+
+  // Definition
+  --definition-bg: var(--neutral-100);
+  --definition-marker: var(--accent-200);
+  --definition-tc: var(--neutral-700);
+
+  // Dictionary
+  --dictionary-bg: var(--neutral-100);
+
+  // Divider
+  --divider-color: var(--neutral-300);
+
+  // Example
+  --example-bg: var(--neutral-100);
+  --example-tc: var(--neutral-500);
+
   // Font switcher
+  --font-switcher-bg: var(--neutral-100);
   --font-switcher-tc: var(--neutral-700);
 
   // Font switcher modal
@@ -111,6 +171,11 @@ html[data-theme="light"] {
 
   // Main
   --main-bg: var(--neutral-100);
+
+  // Meaning
+  --meaning-bg: var(--neutral-100);
+  --meaning-part-of-speech-tc: var(--neutral-700);
+  --meaning-heading-tc: var(--neutral-500);
 
   // Message
   --message-bg: var(--neutral-100);
@@ -126,9 +191,22 @@ html[data-theme="light"] {
   --phonetic-tc: var(--accent-200);
   --phonetic-word-tc: var(--neutral-700);
 
+  // Phonetics
+  --phonetics-bg: var(--neutral-100);
+
   // Searchbar
   --searchbar-bg: var(--neutral-200);
   --searchbar-tc: var(--neutral-700);
+
+  // Source
+  --source-bg: var(--neutral-100);
+  --source-tc: var(--neutral-500);
+  --source-link-tc: var(--neutral-700);
+
+  // Synonym
+  --synonym-bg: var(--neutral-100);
+  --synonym-tc-1: var(--neutral-500);
+  --synonym-tc-2: var(--accent-200);
 
   // Theme switcher
   --theme-switcher-icon-moon-stroke: var(--neutral-500);

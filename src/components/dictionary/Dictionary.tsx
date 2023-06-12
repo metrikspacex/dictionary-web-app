@@ -6,7 +6,7 @@ import Meanings from "@/components/meanings/Meanings";
 import Phonetics from "@/components/phonetics/Phonetics";
 import SourceLink from "@/components/source-link/SourceLink";
 
-import styles from "./dictionary.module.scss";
+import styles from "./Dictionary.module.scss";
 
 // Fetch
 async function getWord(word: string) {
@@ -27,12 +27,15 @@ export default async function Dictionary({ className, word }: DictionaryProps) {
 
   return (
     <>
+      <Phonetics
+        phonetics={dictionary[0].phonetics}
+        word={dictionary[0].word}
+      />
       {dictionary.map((item, key) => {
         return (
           <div
             className={clsx(styles.root, className)}
             key={`dictionary-${key}`}>
-            <Phonetics phonetics={item.phonetics} word={item.word} />
             <Meanings meanings={item.meanings} />
             <span className={clsx(styles.divider)} />
             <SourceLink sourceUrls={item.sourceUrls} />
