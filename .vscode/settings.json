@@ -7,6 +7,7 @@
     ".next": true,
     ".prettierignore": true,
     ".prettierrc": true,
+    ".screenshots": true,
     "app/favicon.ico": true,
     "next-env.d.ts": true,
     "next.config.js": true,
@@ -14,6 +15,7 @@
     "package-lock.json": true,
     "package.json": true,
     "postcss.config.js": true,
+    "readme.md": true,
     "tailwind.config.js": true,
     "tsconfig.json": true
   },
