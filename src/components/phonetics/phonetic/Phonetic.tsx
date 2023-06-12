@@ -4,14 +4,21 @@ import type { HTMLAttributes } from "react";
 import styles from "./Phonetic.module.scss";
 
 export type PhoneticProps = HTMLAttributes<HTMLElement> & {
-  phonetic: Phonetic;
+  audio: Phonetics["audio"];
+  text: Phonetics["text"];
   word: Word;
 };
-export default function Phonetic({ className, phonetic, word }: PhoneticProps) {
+export default function Phonetic({
+  audio,
+  className,
+  text,
+  word,
+}: PhoneticProps) {
+  console.log(audio);
   return (
     <section className={clsx(styles.root, className)}>
       <h1 className={clsx(styles.word)}>{word}</h1>
-      <h2 className={clsx(styles.phonetic)}>{phonetic}</h2>
+      <h2 className={clsx(styles.phonetic)}>{text}</h2>
       <svg
         className={clsx(styles.play)}
         height="75"

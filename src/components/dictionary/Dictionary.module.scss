@@ -1,0 +1,13 @@
+div.root {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.2rem;
+  margin-bottom: 6rem;
+}
+
+span.divider {
+  background-color: var(--neutral-600);
+  display: block;
+  height: 1px;
+  width: 100%;
+}
