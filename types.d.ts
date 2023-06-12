@@ -4,6 +4,38 @@ declare global {
   }
 }
 
+type Definition = {
+  antonyms: string[];
+  definition: string;
+  example?: string;
+  synonyms: string[];
+};
+
+type License = {
+  name: string;
+  url: string;
+};
+
+type Meaning = {
+  antonyms: string[];
+  definitions: Definition[];
+  partOfSpeech: string;
+  synonyms: string[];
+};
+
+type Phonetic = string;
+
+type Phonetics = {
+  audio: string;
+  license?: License;
+  sourceUrl?: string;
+  text: string;
+}[];
+
+type SourceUrls = string[];
+
+type Word = string;
+
 type ErrorResponse = {
   message: string;
   resolution: string;
@@ -11,31 +43,10 @@ type ErrorResponse = {
 };
 
 type WordResponse = {
-  license: {
-    name: string;
-    url: string;
-  };
-  meanings: {
-    antonyms: string[];
-    definitions: {
-      antonyms: string[];
-      definition: string;
-      example?: string;
-      synonyms: string[];
-    }[];
-    partOfSpeech: string;
-    synonyms: string[];
-  }[];
-  phonetic: string;
-  phonetics: {
-    audio: string;
-    license?: {
-      name: string;
-      url: string;
-    };
-    sourceUrl?: string;
-    text: string;
-  }[];
-  sourceUrls: string[];
-  word: string;
-};
+  license: License;
+  meanings: Meaning[];
+  phonetic: Phonetic;
+  phonetics: Phonetics;
+  sourceUrls: SourceUrls;
+  word: Word;
+}[];

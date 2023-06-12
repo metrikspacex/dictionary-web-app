@@ -1,0 +1,40 @@
+div.partOfSpeech {
+  align-items: center;
+  margin-bottom: 3.2rem;
+  display: flex;
+
+  & > span:nth-child(1) {
+    color: var(--neutral-100);
+    font-family: var(--ff);
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 2.2rem;
+    margin-right: 1.6rem;
+    width: max-content;
+  }
+
+  & > span:nth-child(2) {
+    background-color: var(--neutral-600);
+    height: 1px;
+    width: 100%;
+  }
+}
+
+h1.meaning {
+  color: var(--neutral-500);
+  font-family: var(--ff);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 1.7rem;
+}
+
+ul.definitions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.3rem;
+  list-style-position: inside;
+  margin-bottom: 2.4rem;
+}

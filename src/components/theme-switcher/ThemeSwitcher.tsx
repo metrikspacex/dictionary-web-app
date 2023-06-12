@@ -1,11 +1,11 @@
 "use client";
 
-import styles from "./ThemeSwitcher.module.scss";
-
-import { HTMLAttributes } from "react";
-
 import clsx from "clsx";
+import type { HTMLAttributes } from "react";
+
 import useTheme from "@/hooks/useTheme";
+
+import styles from "./ThemeSwitcher.module.scss";
 
 export type ThemeSwitcherProps = HTMLAttributes<HTMLDivElement>;
 export default function ThemeSwitcher({ className }: ThemeSwitcherProps) {
@@ -21,20 +21,20 @@ export default function ThemeSwitcher({ className }: ThemeSwitcherProps) {
 
   return (
     <div className={clsx(styles.root, className)}>
-      <label className={clsx(styles["theme__switch"])} htmlFor="themeSwitch">
+      <label className={clsx(styles.theme__switch)} htmlFor="themeSwitch">
         <input
           checked={theme === "dark"}
-          className={clsx(styles["theme__switcher__checkbox"])}
+          className={clsx(styles.theme__switcher__checkbox)}
           id="themeSwitch"
           name="themeSwitch"
-          onChange={onChange}
           type="checkbox"
+          onChange={onChange}
         />
-        <span className={clsx(styles["theme__switch__slider"])} />
+        <span className={clsx(styles.theme__switch__slider)} />
       </label>
 
       <svg
-        className={clsx(styles["theme__switch__icon__moon"])}
+        className={clsx(styles.theme__switch__icon__moon)}
         height="22"
         viewBox="0 0 22 22"
         width="22"

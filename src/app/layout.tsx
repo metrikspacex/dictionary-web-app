@@ -1,8 +1,7 @@
 import "@/styles/globals.scss";
 
-import { Inconsolata, Inter, Lora } from "next/font/google";
-
 import clsx from "clsx";
+import { Inconsolata, Inter, Lora } from "next/font/google";
 
 import Header from "@/components/header/Header";
 import Main from "@/components/main/Main";

@@ -17,6 +17,7 @@ input.search {
   line-height: 2.4rem;
   outline: 0;
   padding-inline: 2.4rem;
+  width: 100%;
 
   &::placeholder {
     color: var(--searchbar-tc);

@@ -1,13 +1,11 @@
-import styles from "./Navbar.module.scss";
-
-import Image from "next/image";
-
-import { HTMLAttributes } from "react";
-
 import clsx from "clsx";
+import Image from "next/image";
+import type { HTMLAttributes } from "react";
 
 import FontSwitcher from "@/components/font-switcher/FontSwitcher";
 import ThemeSwitcher from "@/components/theme-switcher/ThemeSwitcher";
+
+import styles from "./Navbar.module.scss";
 
 export type NavbarProps = HTMLAttributes<HTMLElement>;
 export default function Navbar({ className }: NavbarProps) {
@@ -17,7 +15,7 @@ export default function Navbar({ className }: NavbarProps) {
 
       <div className={clsx(styles.container)}>
         <FontSwitcher />
-        <span className={clsx("horizontal-divider")} />
+        <span className={clsx(styles.horizontal__divider)} />
         <ThemeSwitcher />
       </div>
     </nav>

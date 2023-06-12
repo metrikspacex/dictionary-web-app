@@ -115,6 +115,7 @@
           ],
           "scss/at-rule-no-unknown": null,
           "selector-attribute-quotes": "always",
+          "selector-class-pattern": null,
           "selector-max-class": 4,
           "selector-max-combinators": 4,
           "selector-max-compound-selectors": 4,
@@ -138,7 +139,8 @@
           "unit-disallowed-list": [ ],
           "value-keyword-case": "lower",
           "value-no-vendor-prefix": true
-        }
+        },
+        "selector-class-pattern": null
       }
     ]
   },

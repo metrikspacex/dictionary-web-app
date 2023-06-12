@@ -1,12 +1,11 @@
 "use client";
 
-import styles from "./Searchbar.module.scss";
-
-import { useRouter } from "next/navigation";
-
-import { ChangeEvent, FormEvent, HTMLAttributes, useState } from "react";
-
 import clsx from "clsx";
+import { useRouter } from "next/navigation";
+import type { ChangeEvent, FormEvent, HTMLAttributes } from "react";
+import { useState } from "react";
+
+import styles from "./Searchbar.module.scss";
 
 export type SearchbarProps = HTMLAttributes<HTMLFormElement>;
 export default function Searchbar({ className }: SearchbarProps) {
@@ -29,8 +28,8 @@ export default function Searchbar({ className }: SearchbarProps) {
     <form className={clsx(styles.root, className)} onSubmit={handleSubmit}>
       <input
         className={clsx(styles.search)}
-        onChange={onChange}
         placeholder="Search word..."
+        onChange={onChange}
       />
     </form>
   );

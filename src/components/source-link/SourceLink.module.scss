@@ -1,0 +1,25 @@
+h1.source {
+  color: var(--neutral-500);
+  font-family: var(--ff);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 0.7rem;
+  text-decoration-line: underline;
+}
+
+a.source {
+  color: var(--neutral-100);
+  font-family: var(--ff);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration-line: underline;
+  margin-right: 1.5rem;
+}
+
+img.source {
+  vertical-align: middle;
+}

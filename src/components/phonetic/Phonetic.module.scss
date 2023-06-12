@@ -1,0 +1,44 @@
+section.root {
+  align-items: center;
+  background-color: var(--phonetic-bg);
+  display: grid;
+  grid-template-areas:
+          "word play"
+          "phonetic play";
+  grid-template-columns: max-content 4.8rem;
+  grid-template-rows: max-content 4.8rem;
+  justify-content: space-between;
+}
+
+h1.word {
+  color: var(--phonetic-word-tc);
+  font-family: var(--ff);
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  grid-area: word;
+  line-height: 3.9rem;
+}
+
+h2.phonetic {
+  color: var(--phonetic-tc);
+  font-family: var(--ff);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  grid-area: phonetic;
+  line-height: 2.4rem;
+  margin-top: auto;
+}
+
+svg.play {
+  color: var(--phonetic-play-fill);
+  grid-area: play;
+  height: 4.8rem;
+  width: 4.8rem;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+}

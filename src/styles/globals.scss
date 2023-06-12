@@ -68,8 +68,19 @@ html[data-theme="dark"] {
   // Main
   --main-bg: var(--neutral-900);
 
+  // Message
+  --message-bg: var(--neutral-900);
+  --message-content-tc: var(--neutral-500);
+  --message-title-tc: var(--neutral-100);
+
   // Navbar
   --navbar-bg: var(--neutral-900);
+
+  // Phonetic
+  --phonetic-bg: var(--neutral-900);
+  --phonetic-play-fill: rgba(164, 69, 237, 0.75);
+  --phonetic-tc: var(--accent-200);
+  --phonetic-word-tc: var(--neutral-100);
 
   // Searchbar
   --searchbar-bg: var(--neutral-800);
@@ -101,8 +112,19 @@ html[data-theme="light"] {
   // Main
   --main-bg: var(--neutral-100);
 
+  // Message
+  --message-bg: var(--neutral-100);
+  --message-content-tc: var(--neutral-500);
+  --message-title-tc: var(--neutral-700);
+
   // Navbar
   --navbar-bg: var(--neutral-100);
+
+  // Phonetic
+  --phonetic-bg: var(--neutral-100);
+  --phonetic-play-fill: var(--accent-200);
+  --phonetic-tc: var(--accent-200);
+  --phonetic-word-tc: var(--neutral-700);
 
   // Searchbar
   --searchbar-bg: var(--neutral-200);
@@ -115,33 +137,17 @@ html[data-theme="light"] {
 }
 
 body {
-  @include breaks(mobile) {
-    background-color: var(--bg);
-    color: var(--tc);
-    display: grid;
-    font-family: var(--ff);
-    grid-template-areas:
+  background-color: var(--bg);
+  color: var(--tc);
+  display: grid;
+  font-family: var(--ff);
+  grid-template-areas:
       "header"
       "main";
-    grid-template-columns: clamp(32rem, 100%, 73.6rem);
-    grid-template-rows: 15.2rem 1fr;
-    justify-content: center;
-    min-height: 100vh;
-  }
-
-  @include breaks(tablet) {
-  }
-
-  @include breaks(desktop) {
-  }
+  grid-template-columns: clamp(32rem, 100%, 73.6rem);
+  grid-template-rows: 15.2rem 1fr;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.horizontal-divider {
-  background-color: var(--neutral-500);
-  height: 100%;
-  width: 1px;
-}
-
-.vertical-divider {
-}
 

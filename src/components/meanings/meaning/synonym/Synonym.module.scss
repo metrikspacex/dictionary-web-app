@@ -1,0 +1,39 @@
+div.root {
+  column-gap: 1.6rem;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: max-content 1fr;
+}
+
+h1.synonyms {
+  color: #757575;
+  font-family: var(--ff);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  grid-column: 1;
+  line-height: 1.9rem;
+}
+
+div.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+
+  p.synonyms {
+    color: #A445ED;
+    display: inline-block;
+    font-family: var(--ff);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.9rem;
+    width: max-content;
+
+    &:focus,
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,8 +1,7 @@
-import styles from "./Main.module.scss";
-
-import { HTMLAttributes } from "react";
-
 import clsx from "clsx";
+import type { HTMLAttributes } from "react";
+
+import styles from "./Main.module.scss";
 
 export type MainProps = HTMLAttributes<HTMLElement>;
 export default function Main({ className, children }: MainProps) {

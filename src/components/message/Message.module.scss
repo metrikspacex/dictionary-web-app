@@ -1,0 +1,36 @@
+div.root {
+  align-items: center;
+  background-color: var(--message-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+span.emoji {
+  display: block;
+  font-size: 6.4rem;
+  line-height: 6.4rem;
+  height: 6.4rem;
+  width: 6.4rem;
+}
+
+h1.title {
+  color: var(--message-title-tc);
+  font-family: var(--ff);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-align: center;
+  margin-block: 4.4rem 2.4rem;
+}
+
+p.content {
+  color: var(--message-content-tc);
+  font-family: var(--ff);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  text-align: center;
+}
