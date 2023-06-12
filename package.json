@@ -35,7 +35,7 @@
     "stylelint-config-standard-scss": "^9.0.0",
     "stylelint-scss": "^5.0.1"
   },
-  "homepage": "https://metrikspacex.github.io/dictionary-web-app",
+  "homepage": "https://dictionary-web-eyweugyvu-metrikspacex.vercel.app/",
   "name": "dictionary-web-app",
   "private": true,
   "repository": {
